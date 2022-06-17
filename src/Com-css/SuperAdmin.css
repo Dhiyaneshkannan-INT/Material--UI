@@ -1,0 +1,63 @@
+.s-adm-profile-container {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+.s-adm-profile-tlt {
+  margin-bottom: 16px;
+  color: #184ca0;
+  font-size: 18px;
+}
+.s-adm-profileForm-btn {
+  padding: 6px !important;
+  margin: 5px 10px 0px 0px !important;
+  size: 16px;
+}
+.s-adm-formhr {
+  background: #5353ff;
+  height: 2px;
+}
+.s-adm-OrderForm-btn {
+  padding: 6px !important;
+  margin: 5px 10px 0px 0px !important;
+  size: 16px;
+}
+.s-adm-title-approved {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.s-adm-form-tlt {
+  color: black;
+}
+.s-adm-dispaly-flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .s-adm-OrderForm-btn {
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 992px) {
+    .icon-content {
+      width: 50%;
+    }
+  } */
+.password {
+  margin: 0 auto;
+  padding: 22px;
+  width: 20%;
+  border-radius: 5px;
+}
+.title {
+  font-size: 32px;
+  color: #184ca0;
+}
+.card{
+    margin: 0 auto;
+    width: auto;
+}

@@ -1,0 +1,18 @@
+.avatar {
+ justify-content:space-between;
+ 
+}
+.button{
+  text-align: center;
+  padding: 0px 20px;
+  background-color: #ffffff;
+}
+.button1{
+width: 500px;
+text-align: center;
+padding: 0px 20px;
+}
+.button2{
+  width: 50px;
+  padding: 0px 0.5px;
+}

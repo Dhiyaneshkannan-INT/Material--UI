@@ -1,0 +1,72 @@
+body{
+    background-image: linear-gradient(to right, #ecf2f3, #ffffff);
+}
+
+.login{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10%; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100vh;
+}
+
+.paper{
+    position:relative;
+}
+ 
+.title{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.TextField{
+text-align:  left;
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;  
+}
+@media  (max-width:576px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
+@media  (max-width:768px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
+@media  (max-width:992px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
+@media  (max-width:320px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
+@media  (max-width:375px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
+@media  (max-width:425px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
+@media  (max-width:1200px) {
+    login{
+        background-color: rgb(153, 150, 150);
+         
+    }
+}
