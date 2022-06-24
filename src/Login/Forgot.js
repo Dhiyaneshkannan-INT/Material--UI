@@ -14,6 +14,7 @@ import "../Login/Login.css";
 import { ToastContainer, toast } from "react-toastify";
 import { Email } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 const Forgot = () => {
   const paperStyle = {
     padding: 50,
@@ -22,12 +23,12 @@ const Forgot = () => {
   };
   const avatarStyle = { backgroundColor: "#1976D2" };
   const btnstyle = { margin: "9px o" };
-  const initialValues = { email: "" };
+  const initialValues = {email: ""};
   const [signInData, setSignInData] = useState(initialValues);
   const [signInErrors, setsignInErrors] = useState({});
   const [isSumbit, setisSubmit] = useState(false);
   const navigate = useNavigate();
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setSignInData({
@@ -35,15 +36,21 @@ const Forgot = () => {
       [name]: value,
     });
   };
-  const handleSubmit = (e) => {
+  
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(signInData);
-    if (signInData .email != "") {
+    try {
+      const response = await axios.post(
+        `https://backend-ai-postgres.herokuapp.com/forgot-password`,
+        signInData
+      );
+      console.log(response);
       navigate("/forgotpassword/otp");
-    } else {
-      toast.error("Please enter the fields.", {
+    } catch (err) {
+      toast.error("Credentials are incorrect", {
         position: "bottom-right",
-        autoClose: 3000,
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -51,7 +58,6 @@ const Forgot = () => {
         progress: undefined,
       });
     }
-     
   };
   return (
     <div>

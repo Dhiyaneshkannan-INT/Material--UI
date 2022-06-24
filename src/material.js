@@ -482,3 +482,82 @@
 //     </Box>
 //   );
 // }
+
+
+//OTP 
+
+// import { Avatar, Button, Grid, Paper } from "@mui/material";
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+
+// import { SettingsSuggestRounded } from "@mui/icons-material";
+// import userEvent from "@testing-library/user-event";
+// const Otp = () => {
+//   const paperStyle = {
+//     padding: 50,
+//     height: "auto",
+//     width: 300,
+//   };
+//   const avatarStyle = { backgroundColor: "#1976D2" };
+//   const btnstyle = { margin: "8px o" };
+
+//   const [counter, setCounter] = React.useState(10);
+//   React.useEffect(()=>{
+//     const timer =
+//     counter > 0 && setInterval(()=> setCounter(counter - 1),1000);
+//     return()=> clearInterval(timer);
+//   },[counter]);
+//   return (
+//     <div className="login">
+//       <Grid>
+//         <Paper className="paper" elevation={10} style={paperStyle}>
+//           <Grid align="center">
+//             {" "}
+//             <Avatar style={avatarStyle}>
+//               <AccountCircleOutlinedIcon />
+//             </Avatar>
+
+//             <div className="Container">
+//             <h2>OTP</h2>
+//             <div className="userInput">
+
+//             <input type="text" id="first" maxLength={1} onKeyUp="clickEvent(this,'sec')"/>
+//             <input type="text" id="sec" maxLength={1} onKeyUp="clickEvent(this,'third')"/>
+//             <input type="text" id="third" maxLength={1} onKeyUp="clickEvent(this,'fourth')"/>
+//             <input type="text" id="fourth" maxLength={1} onKeyUp="clickEvent(this,'fifth')"/>
+//             <input type="text" id="fifth" maxLength={1}  />
+//             </div>
+//             <br/>
+//             <nav>
+//             {" "}
+//             <Link to="update" style={{ textDecoration: "none" }}>
+//               {" "}
+//               <Button
+//                 variant="contained"
+//                 type="Submit"
+//                 style={btnstyle}
+//                 fullWidth
+//               >
+//                 Verify{" "}
+//               </Button>
+//             </Link>
+//           </nav>
+
+//             </div>
+//           </Grid>
+
+//           <br />
+//           <br />
+//         </Paper>
+//       </Grid>
+//     </div>
+//   );
+// };
+
+// export default Otp;
+
+
+// const Otp = ({resendOTP, ...rest }) => {
+//   const [OTP, setOTP] = useState("");
+//   <OTPInput value={OTP} onChange={setOTP} {...rest} />

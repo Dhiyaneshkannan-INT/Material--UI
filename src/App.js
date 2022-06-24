@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+// import AsyncAxios from "./api/Async,await";
+// import Learning from "./api/Axios";
 // import Parent from "./Practice/index1";
 // import StyledBadge from './Component/Active green'
 // import Nav from './Component/Navbar'
@@ -16,6 +18,8 @@ const App = () => {
         {/* < ResponsiveDrawer/> */}
         {/* <MaterialSuperAdmin/> */}
         <Loginsuper />
+        {/* <Learning/> */}
+        {/* <AsyncAxios/> */}
         {/* <Parent/> */}
         {/* <Toast/> */}
       </BrowserRouter>
